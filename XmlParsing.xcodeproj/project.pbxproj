@@ -91,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C2D837020E52145005DB26D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62A029C620E316C3005383A6 /* LaunchScreen.storyboard */,
+				62A029C120E316C3005383A6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C2D837120E5214F005DB26D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				62A029BF20E316C3005383A6 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		62A029B120E316C3005383A6 = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +133,11 @@
 		62A029BC20E316C3005383A6 /* XmlParsing */ = {
 			isa = PBXGroup;
 			children = (
+				0C2D837120E5214F005DB26D /* ViewController */,
+				0C2D837020E52145005DB26D /* View */,
 				62A029EB20E31713005383A6 /* Model */,
 				62A029BD20E316C3005383A6 /* AppDelegate.swift */,
-				62A029BF20E316C3005383A6 /* ViewController.swift */,
-				62A029C120E316C3005383A6 /* Main.storyboard */,
 				62A029C420E316C3005383A6 /* Assets.xcassets */,
-				62A029C620E316C3005383A6 /* LaunchScreen.storyboard */,
 				62A029C920E316C3005383A6 /* Info.plist */,
 			);
 			path = XmlParsing;
