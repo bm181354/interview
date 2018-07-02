@@ -11,12 +11,29 @@ import XCTest
 
 class XmlParsingTests: XCTestCase {
     
+    var currencyVM:CurrencyViewModel!
+    
     override func setUp() {
         super.setUp()
+          currencyVM = CurrencyViewModel()
+          loadData()
+        }
+   
+    // this needs expectation
+    func loadData(){
         
+        // create exp
+        
+        // load
+      
+
+        // exp rule
         
     }
-   
+    
+    func testCount(){
+        XCTAssert(currencyVM.count() == 0)
+    }
     
     
     

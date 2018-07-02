@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XmlParsingTests/XmlParsingTests.swift"
+            timestampString = "552231583.4585119"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testCount()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XmlParsingTests.XmlParsingTests.testCount() -&gt; ()"
+                  moduleName = "XmlParsingTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bikenmaharjan/Desktop/Xmlparsing/interview/XmlParsingTests/XmlParsingTests.swift"
+                  timestampString = "552224259.322359"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "523">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Bool in XmlParsingTests.XmlParsingTests.testCount() -&gt; ()"
+                  moduleName = "XmlParsingTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bikenmaharjan/Desktop/Xmlparsing/interview/XmlParsingTests/XmlParsingTests.swift"
+                  timestampString = "552224259.3260159"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
