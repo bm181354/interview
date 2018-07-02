@@ -55,9 +55,6 @@ extension ViewController {
                     self?.lbName.text =  result!
                 }else {
                     self?.lbName.text = "No result"
-                    
-                    
-            
                 }
             }else{
                 print(error as! Error)
