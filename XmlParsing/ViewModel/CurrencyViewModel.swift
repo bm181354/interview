@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CurrencyViewModel{
     
@@ -46,9 +47,12 @@ class CurrencyViewModel{
     }
     
     func loadData(text: String = "INR=X",completion:@escaping (Bool,Any)->()){
-        Resource.fetchData(symbol: "CNY=X", done: { [weak self] (isSuccess,data,error)->() in
+        Resource.loadData(symbol: "CNY=X", done: { [weak self] (isSuccess,data,error)->() in
             if (isSuccess){
-                self?.collection = (data as? [Resource])!
+                
+                // load data
+                let data = try! self?.fetchCoreData()
+                self?.collection = (data)!
                 if let result = try? self?.search(symbol:text,resources: data as? [Resource]){
                       //self?.lbName.text =  result!
                        completion(true,result!)
@@ -60,5 +64,18 @@ class CurrencyViewModel{
         })
     }
     
- 
+    func fetchCoreData()throws->[Resource]{
+        let container = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+        let context = container.viewContext
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Resource")
+        
+            if let result = try? context.fetch(request)
+            {
+                print(result)
+                return result as! [Resource]
+            }else {throw customError.noIndex}
+           
+     }
+
 }

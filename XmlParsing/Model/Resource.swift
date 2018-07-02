@@ -17,7 +17,7 @@ import CoreData
 // MARK:- Netowking
 extension Resource{
     // MARK:- fetch data [Newtorking]
-    static func fetchData(symbol:String, done: @escaping (Bool,Any,Any)->Void){
+    static func loadData(symbol:String, done: @escaping (Bool,Any,Any)->Void){
         
         let container = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
         let context = container.viewContext
@@ -45,11 +45,6 @@ extension Resource{
                             let utc = resource["field",5].text,
                             let volume = resource["field",6].text {
                             
-                            
-//                           let resource = Resource(name: name,price: price,symbol: symbol,ts: ts,
-//                                                    type: type,date: utc,volume: volume)
-//
-//                            resources.append(resource)
                             
                             let resource = Resource(context: context)
                             resource.date = utc
@@ -92,5 +87,6 @@ enum customError:Error{
     case novalueError
     case noIndex
 }
-//////
+///////////////////////////////////////////////
+
 

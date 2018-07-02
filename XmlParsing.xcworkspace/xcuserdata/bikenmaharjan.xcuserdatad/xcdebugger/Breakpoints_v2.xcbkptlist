@@ -26,13 +26,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XmlParsing/Model/Resource.swift"
-            timestampString = "552243525.264504"
+            timestampString = "552245391.010627"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "fetchData(symbol:done:)"
+            landmarkName = "loadData(symbol:done:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XmlParsing/ViewModel/CurrencyViewModel.swift"
+            timestampString = "552245391.010722"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "loadCoreData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XmlParsing.CurrencyViewModel.loadCoreData() throws -&gt; Swift.Array&lt;XmlParsing.Resource&gt;"
+                  moduleName = "XmlParsing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bikenmaharjan/Desktop/XML/XmlParsing/ViewModel/CurrencyViewModel.swift"
+                  timestampString = "552245391.174296"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "1018">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XmlParsing.CurrencyViewModel.loadCoreData() throws -&gt; Swift.Array&lt;XmlParsing.Resource&gt;"
+                  moduleName = "XmlParsing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bikenmaharjan/Desktop/XML/XmlParsing/ViewModel/CurrencyViewModel.swift"
+                  timestampString = "552245391.179535"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "1076">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
