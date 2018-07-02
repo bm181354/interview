@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XmlParsing/Model/Resource.swift"
-            timestampString = "552245391.010627"
+            timestampString = "552248011.2934591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -38,20 +38,20 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XmlParsing/ViewModel/CurrencyViewModel.swift"
-            timestampString = "552245391.010722"
+            timestampString = "552248011.293537"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "loadCoreData()"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "fetchCoreData()"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "XmlParsing.CurrencyViewModel.loadCoreData() throws -&gt; Swift.Array&lt;XmlParsing.Resource&gt;"
@@ -66,7 +66,7 @@
                   offsetFromSymbolStart = "1018">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "XmlParsing.CurrencyViewModel.loadCoreData() throws -&gt; Swift.Array&lt;XmlParsing.Resource&gt;"
@@ -81,6 +81,22 @@
                   offsetFromSymbolStart = "1076">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XmlParsing/ViewModel/CurrencyViewModel.swift"
+            timestampString = "552248011.293838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "loadData(text:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

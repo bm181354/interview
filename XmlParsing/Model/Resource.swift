@@ -23,7 +23,7 @@ extension Resource{
         let context = container.viewContext
         
         #if DEBUG
-        print("Fetch")
+        print("Load")
         #endif
         
         let url = "https://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote"

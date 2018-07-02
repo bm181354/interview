@@ -13,6 +13,11 @@ class CurrencyViewModel{
     
     var collection:[Resource] = []
     
+    
+    init() {
+        
+    }
+    
     func addValue(resource: Resource){
         collection.append(resource)
     }
@@ -47,21 +52,45 @@ class CurrencyViewModel{
     }
     
     func loadData(text: String = "INR=X",completion:@escaping (Bool,Any)->()){
+        
+        // check whether request has data or not
+        let container = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+        let context = container.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Resource")
+        
+        // if it has element then use this
+        let count  = try! context.count(for: request)
+        print(count)
+
+        if count > 0 {
+             let data = try! self.fetchCoreData()
+            if let result = try? self.search(symbol:text,resources: data as? [Resource]){
+               
+                completion(true,result)
+                print("result from coredata")
+            }else {
+               
+                completion(false,"none")
+            }
+        } else {
+        //else
         Resource.loadData(symbol: "CNY=X", done: { [weak self] (isSuccess,data,error)->() in
             if (isSuccess){
-                
                 // load data
                 let data = try! self?.fetchCoreData()
                 self?.collection = (data)!
                 if let result = try? self?.search(symbol:text,resources: data as? [Resource]){
-                      //self?.lbName.text =  result!
+                    
                        completion(true,result!)
+                      print("from web")
                 }else {
-                      //self?.lbName.text = "No result"
+                    
                        completion(false,"none")
                 }
             }
         })
+    }
+        
     }
     
     func fetchCoreData()throws->[Resource]{
@@ -73,6 +102,7 @@ class CurrencyViewModel{
             if let result = try? context.fetch(request)
             {
                 print(result)
+                // package list of Resource
                 return result as! [Resource]
             }else {throw customError.noIndex}
            
