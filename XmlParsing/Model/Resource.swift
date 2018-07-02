@@ -16,10 +16,6 @@ import CoreData
 // apple's default way to work with XML
 // MARK:- Netowking
 extension Resource{
-    
-    
-    
-    
     // MARK:- fetch data [Newtorking]
     static func fetchData(symbol:String, done: @escaping (Bool,Any,Any)->Void){
         
